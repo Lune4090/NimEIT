@@ -114,7 +114,7 @@
             "checksum": "bc6933372278685ce1f8895cc6490b63bd7b421d"
           },
           {
-            "path": "/home/lune/nimEIT"
+            "path": "/Users/lune/NimEIT"
           }
         ]
       }
@@ -200,7 +200,7 @@
       "0.7.1": {
         "586fe63467a674008c4445ed1b8ac882177d7103": [
           {
-            "path": "/home/lune/nimEIT"
+            "path": "/Users/lune/NimEIT"
           }
         ]
       }
@@ -209,7 +209,7 @@
       "0.1.0": {
         "d68319e3785fa937f0465ea915e942b61b6b5442": [
           {
-            "path": "/home/lune/nimEIT"
+            "path": "/Users/lune/NimEIT"
           }
         ]
       }
@@ -218,7 +218,7 @@
       "0.3.3": {
         "a0687b7a917ebea721ceb9466125440074bac044": [
           {
-            "path": "/home/lune/nimEIT"
+            "path": "/Users/lune/NimEIT"
           }
         ]
       }
@@ -227,7 +227,16 @@
       "0.4.0": {
         "f5971c64ccb600d34df5a162cad32e262f8d84f9": [
           {
-            "path": "/home/lune/nimEIT"
+            "path": "/Users/lune/NimEIT"
+          }
+        ]
+      }
+    },
+    "serial": {
+      "1.2.0": {
+        "85079d0e3a6e3f1478357c016e03308b8ede3a05": [
+          {
+            "path": "/Users/lune/NimEIT"
           }
         ]
       }

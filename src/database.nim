@@ -9,25 +9,25 @@ proc update_database*(mesh: Mesh, meshName: string) =
     db = open("data/" & meshName & "/mesh.db", "", "", "")
 
   echo "Writing database..."
-    
+
   db.exec(sql"""CREATE TABLE IF NOT EXISTS ElementTable (
                 ExperimentID INTEGER,
                 ElementID INTEGER,
                 σRef FLOAT
             )""")
-  
+
   db.exec(sql"""CREATE TABLE IF NOT EXISTS VerticeTable (
                 ExperimentID INTEGER,
                 VerticeID INTEGER,
-                I FLOAT,
+                J FLOAT,
                 V FLOAT
             )""")
 
-  for (i, elem) in mesh.elements.pairs():    
+  for (i, elem) in mesh.elements.pairs():
     db.exec(sql"INSERT INTO ElementTable (ExperimentID, ElementID, σRef) VALUES (?, ?, ?)",
       $experimentID.parseInt, $i, $elem.σRef)
 
-  for (i, vert) in mesh.vertices.pairs():    
+  for (i, vert) in mesh.vertices.pairs():
     db.exec(sql"INSERT INTO VerticeTable (ExperimentID, VerticeID, J, V) VALUES (?, ?, ?, ?)",
       $experimentID.parseInt, $i, $vert.J, $vert.V)
 
